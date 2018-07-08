@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">E-commerce App UI</string>
+    <string name="search_hint">Search item...</string>
+    <string name="dummy_text1">OUR POPULAR PRODUCTS</string>
+</resources>

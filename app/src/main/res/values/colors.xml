@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67b0d6</color>
+    <color name="colorPrimaryDark">#548fae</color>
+    <color name="colorAccent">#000</color>
+
+    <!-- Custom color here-->
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGrey1">#38474f</color>
+    <color name="colorGrey2">#29353a</color>
+    <color name="colorGrey3">#2d3a40</color>
+    <color name="colorGrey4">#38474f</color>
+    <color name="colorGrey5">#323c3f</color>
+    <color name="colorGreen1">#84b262</color>
+    <color name="colorGreen2">#88cb56</color>
+    <color name="colorAsh1">#e8e8e8</color>
+    <color name="colorAsh2">#bfbfc4</color>
+    <color name="colorAsh3">#e2e4e4</color>
+    <color name="colorAsh4">#a6a6ad</color>
+    <color name="colorAsh5">#eaebeb</color>
+    <color name="colorAsh6">#d9d9dd</color>
+    <color name="colorAsh7">#bec0c1</color>
+    <color name="colorAsh8">#aaabbc</color>
+    <color name="colorOrange1">#f6846a</color>
+    <color name="colorOrange2">#f69b86</color>
+    <color name="colorOrangeDarke">#c86b56</color>
+</resources>
