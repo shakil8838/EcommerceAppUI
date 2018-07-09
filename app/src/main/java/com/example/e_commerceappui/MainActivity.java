@@ -1,5 +1,6 @@
 package com.example.e_commerceappui;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -75,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
                 2000,
                 4000
         );
+
+        Button mainACtivityViewAll = findViewById(R.id.main_activity_view_all);
+        mainACtivityViewAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AdviceActivity.class));
+            }
+        });
 
 
     }

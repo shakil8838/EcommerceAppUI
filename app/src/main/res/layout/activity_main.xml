@@ -61,5 +61,22 @@
             android:layout_marginRight="5dip"
             android:layout_marginTop="15dip" />
 
+        <Button
+            android:id="@+id/main_activity_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorGrey6"
+            android:paddingBottom="10dip"
+            android:paddingEnd="30dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:paddingStart="30dip"
+            android:paddingTop="10dip"
+            android:text="View All Items"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="15dip"/>
+
     </LinearLayout>
 </ScrollView>
