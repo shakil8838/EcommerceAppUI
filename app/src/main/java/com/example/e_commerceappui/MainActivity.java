@@ -29,17 +29,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int[] imgs = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3};
+        int[] imgs = {
+                R.drawable.slide1,
+                R.drawable.slide2,
+                R.drawable.slide3
+        };
 
+        int[] productImages = {
+                R.drawable.product_image1,
+                R.drawable.product_image2,
+                R.drawable.product_image3,
+                R.drawable.product_image4
+        };
+
+        // Initializing widgets
         viewPager = findViewById(R.id.image_slider);
         recyclerView = findViewById(R.id.product_list);
-
         layoutManager = new GridLayoutManager(MainActivity.this, 2);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new RecyclerAdapter(MainActivity.this));
 
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(imgs, MainActivity.this);
-        viewPager.setAdapter(viewPagerAdapter);
+        // Setting up RecyclerView
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(new RecyclerAdapter(MainActivity.this, productImages));
+
+        // Setting ViewPager Adapter
+        viewPager.setAdapter(new ViewPagerAdapter(imgs, MainActivity.this));
 
         // https://stackoverflow.com/questions/38472916/how-to-swipe-viewpager-images-automatically-using-timetask#
         final Handler handler = new Handler();
@@ -62,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 2000,
                 4000
         );
-
 
 
     }

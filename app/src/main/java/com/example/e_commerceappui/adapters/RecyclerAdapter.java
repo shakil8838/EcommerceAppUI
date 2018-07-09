@@ -10,19 +10,14 @@ import android.widget.TextView;
 
 import com.example.e_commerceappui.R;
 
-public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.MyViewHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
 
     private Context context;
+    private int[] productImages;
 
-    private int[] productImages = {
-            R.drawable.product_image1,
-            R.drawable.product_image2,
-            R.drawable.product_image3,
-            R.drawable.product_image4
-    };
-
-    public RecyclerAdapter(Context context) {
+    public RecyclerAdapter(Context context, int[] productImages) {
         this.context = context;
+        this.productImages = productImages;
     }
 
     @Override
@@ -46,13 +41,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter <RecyclerAdapter.MyVie
         return productImages.length;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         ImageView productImage;
         TextView productTitle;
         TextView productPrice;
 
-        public MyViewHolder(View itemView) {
+        MyViewHolder(View itemView) {
             super(itemView);
 
             productImage = itemView.findViewById(R.id.product_image);
